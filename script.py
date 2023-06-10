@@ -1,3 +1,5 @@
+# steal this code if you want and replace the api key and the token with your own one :clown:
+
 import discord
 from discord.ext import commands
 import openai
@@ -8,7 +10,7 @@ try:
 
     permissions = discord.Permissions(3072)
 
-    openai.api_key = "hey bro you sneaking up on my chatgpt api key? 😏"
+    openai.api_key = "hey bro you sneaking up on my chatgpt api key? go get ur own one, not mines :3"
 
     intents = discord.Intents.default()
     intents.message_content = True
@@ -43,7 +45,7 @@ try:
         await ctx.send(embed=embed)
         # await ctx.send(assistant_text)
         print(f"ChatGPT responded: \n{assistant_text}")
-    bot.run("ayo what are u doing with my code bruh?! dont leak my token to the internet!!!")
+    bot.run("ayo what are u doing with my token bruh?! dont leak my token to the internet!!! ur going to make hackers take over my bot!!!")
 except Exception as e:
     print("The bot encountered an error. Review this error:", e)
     time.sleep(60)
